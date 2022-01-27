@@ -63,7 +63,7 @@ function game() {
     let computerSelection;
     let roundResult;
 
-    for (let i = 0; i < 5; i++) {
+    while (gamesPlayerWon < 5 && gamesComputerWon < 5) {
         playerSelection = getPlayerSelection();
 
         while (playerSelection !== "rock" && playerSelection !== "paper" && playerSelection !== "scissors") {
