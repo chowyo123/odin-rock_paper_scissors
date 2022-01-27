@@ -112,14 +112,10 @@ function game() {
 
 // Alert user of the result
 function notifyResult(result) {
-    if (result === WIN) {
-        alert("You win!");
-    } else if (result === LOSS) {
-        alert("You lost");
-    } else if (result === TIE) {
-        alert("Tie!");
-    } else {
-        alert("Something unexpected happened");
-    }
+    let message = result === WIN ? "You won!" 
+                : result === LOSS ? "You lost" 
+                : "Tie";
+    
+    alert(message);
 }
 
